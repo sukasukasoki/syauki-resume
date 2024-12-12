@@ -1,0 +1,183 @@
+body{
+    background-color: #AAF0D1;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  hr{
+    background-color: none;
+    /* border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: dotted; */
+    border-style: dotted none none;
+    border-width: 5px;
+    border-color: #3EB489;
+    height: 1px;
+    width: 30%;
+  }
+  
+  table{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1{
+    color: #3EB489;
+    font-size : 2.625rem;
+    margin : 50px auto 0 auto;
+    font-family: 'Sacramento',cursive;
+  }
+  
+  h2{
+    color: #3EB489;
+    font-size : 1.625rem;
+    margin : 10px auto 0 auto;
+    font-family: 'Sacramento',cursive;
+  }
+  .intro{
+    color:#3EB489;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  h3{
+    color: #3EB489;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .t1{
+    background-color: grey;
+  }
+  
+  .t2{
+    background-color: #3EB489;
+    transition: background-color 2s;
+  }
+  .t2:hover{
+    background-color: white;
+  }
+  
+  .imggw{
+    filter: grayscale(100%);
+    -webkit-filter:grayscale(100%);
+  }
+  
+  .imggw:hover{
+    filter: grayscale(0%);
+    -webkit-filter:grayscale(0%);
+    transition-property: filter,-webkit-filter;
+    transition-duration: 2s;
+  }
+  
+  .projectsImg{
+    width:30%;
+    border-radius: 25px;
+    float: left;
+    margin-right: 30px
+  }
+  
+  .selfProjects{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .skillRowTop{
+    width: 60%;
+    margin: auto auto 70px auto;
+    text-align: left;
+    line-height: 2;
+  }
+  
+  .skillRow{
+    width: 60%;
+    margin: 150px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+  }
+  
+  .centerer{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .myButton {
+      box-shadow: 0 0 0 2px #656870;
+      background:linear-gradient(to bottom, #4a5363 5%, #000000 100%);
+      background-color:#4a5363;
+      border-radius:10px;
+      border:1px solid #000000;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:19px;
+      padding:12px 10px;
+      text-decoration:none;
+      text-shadow:0 1px 0 #000000;
+  }
+  .myButton:hover {
+      background:linear-gradient(to bottom, #000000 5%, #4a5363 100%);
+      background-color:#000000;
+  }
+  .myButton:active {
+      position:relative;
+      top:1px;
+  }
+  
+  .contacts{
+    text-align: center;
+  }
+  
+  .maps{
+    text-align: center;
+    align-items: center;
+  }
+  
+  .bottom-container{
+    background-color: #66BFBF;
+    text-align: center;
+    padding : 5px 0 20px;
+  }
+  
+  .introBottom{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  .intro-link{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+  
+  .intro-link:hover{
+    color: #EAF6F6;
+  }
+  
+  .footer-link{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+  }
+  .footer-link:hover{
+    color: #EAF6F6;
+  }
+  
+  .projects-link{
+    color: #3EB489;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+  
+  .projects-link:hover{
+    color: #EAF6F6;
+  }
