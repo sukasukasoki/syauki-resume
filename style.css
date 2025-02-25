@@ -46,18 +46,6 @@ a{
     justify-content: center;
 }
 
-.imggw{
-    /* filter: grayscale(100%);
-    -webkit-filter:grayscale(100%); */
-  }
-  
-.imggw:hover{
-/* filter: grayscale(0%);
--webkit-filter:grayscale(0%);
-transition-property: filter,-webkit-filter; */
-transition-duration: 2s;
-}
-
 .hero-container{
     display: flex;
     flex-direction: column;
@@ -90,7 +78,8 @@ transition-duration: 2s;
     padding: 5px 0 5px 0;
     background-color: #3882f6;
     color: white;
-    font-weight: bold;           
+    font-weight: bold;
+    text-align: center;           
     border: none;              
     border-radius: 4px;          
     font-size: 14px;            
@@ -103,7 +92,7 @@ transition-duration: 2s;
     background-color: hsl(217, 82%, 37%); 
 }
 
-/* Information Section Starts here */
+/* Education Section Starts here */
 
 .info-container{
     display: flex;
@@ -146,6 +135,9 @@ transition-duration: 2s;
     width: 250px;
     background-color: transparent;
     border-radius: 10px;
+}
+.box:hover {
+    animation: blink 0.8s infinite;
 }
 
 /* Experience Section Starts here */
