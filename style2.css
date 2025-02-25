@@ -137,7 +137,7 @@ transition-duration: 2s;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    width: 300px;
+    width: 310px;
     text-align: center;
     gap: 5px;
 }
@@ -169,7 +169,7 @@ transition-duration: 2s;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    width: 300px;
+    width: 310px;
     text-align: center;
     gap: 5px;
 }
@@ -187,10 +187,130 @@ transition-duration: 2s;
     font-size: 16px;
 }
 
+.exp-grid .texth{
+    color: rgb(101, 138, 140);
+    line-height: 1;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .exp-box{
     width: 250px;
     background-color: transparent;
     border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+/* Blinking animation when hovered */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.exp-box:hover {
+    animation: blink 0.8s infinite;
+}
+/* EXP POP UP */
+/* Style for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: none;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.modal-title {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.modalheading{
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modaldesc{
+    line-height: 1;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.aligned-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.aligned-list li {
+    display: flex;
+    align-items: flex-start;
+}
+.aligned-list .label {
+    font-weight: bold;
+    min-width: 100px;
+    position: relative;
+    padding-right: 10px; /* Adds space after the label */
+}
+.aligned-list .label:after {
+    content: ":"; /* Adds the colon dynamically */
+    position: absolute;
+    right: 5px;
+}
+.aligned-list span {
+    display: block;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* quote container starts here */

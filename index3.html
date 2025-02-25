@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Pop-up</title>
+  <style>
+    /* Style for the modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* Modal content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    /* Close button */
+    .close {
+      color: #aaa;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Image that triggers the pop-up -->
+<img src="https://via.placeholder.com/200" alt="Click to view popup" id="image" style="cursor: pointer;">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Welcome to the Pop-up Box!</h2>
+    <p>This is a simple pop-up box that appears when you click the image.</p>
+  </div>
+</div>
+
+<script>
+  // Get modal element and close button
+  var modal = document.getElementById("myModal");
+  var closeBtn = document.getElementsByClassName("close")[0];
+
+  // Get image and add click event
+  document.getElementById("image").onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (close button), close the modal
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
