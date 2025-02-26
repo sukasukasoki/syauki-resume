@@ -313,6 +313,68 @@ a{
     cursor: pointer;
 }
 
+/* Skill section starts here */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 50px 30px;
+    background-color: slateblue;
+  }
+  
+.skills-section h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.skills-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* 3 columns */
+gap: 20px; /* Space between items */
+}
+
+.skill-item {
+position: relative;
+}
+
+.skill-title {
+background-color: #f0f0f0;
+padding: 10px 15px;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 5px;
+font-weight: bold;
+gap: 10px; /* Space between logo and text */
+}
+
+.skill-title img.skill-logo {
+width: 20px; /* Set a fixed size for logos */
+height: 20px;
+object-fit: contain; /* Ensure logos fit well inside the size */
+}
+
+.skill-title:hover {
+background-color: #e0e0e0;
+}
+
+.skill-description {
+display: none;
+background-color: #ffffff;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #d0d0d0;
+border-radius: 5px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+margin-left: auto; /* Push arrow to the far right */
+}
+  
+
+
+
 /* quote container starts here */
 .quote-container{
     display: flex;
